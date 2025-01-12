@@ -1,0 +1,518 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+.section {
+    padding: 100px 20px;
+    text-align: center;
+    height: 100vh;
+}
+
+#home {
+    background-color: #333;
+    color: #fff;
+}
+
+#about {
+    background-color: #333;
+    color: #fff;
+}
+
+#services {
+    background-color: #333;
+    color: #fff;
+}
+
+#contact {
+    background-color: #333;
+    color: #fff;
+}
+
+#contact Section .contact-form {
+    max-width: 600px;
+    margin: 20px auto;
+    text-align: left;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.contact-form .form-group {
+    margin-bottom: 15px;
+}
+
+.contact-form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.contact-form button {
+    padding: 10px 20px;
+    background: white;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s ease, width 0.3s ease;
+    margin: auto;
+    display: block;
+}
+
+.contact-form button:hover {
+    background: green;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .contact-form {
+        width: 90%;
+        padding: 10px;
+    }
+
+    .contact-form button {
+        width: 100%;
+    }
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    z-index: 1000;
+}
+
+.logo {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #b4b494;
+}
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu-toggle div {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 3px 0;
+}
+
+@media (max-width: 1024px) {
+    .navbar {
+        padding: 10px 15px;
+    }
+
+    .logo {
+        font-size: 1.2rem;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        width: 80%;
+        padding: 15px;
+        background-color: rgba(0, 0, 0, 0.9);
+        border-radius: 8px;
+        display: none;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    .nav-links a {
+        font-size: 1.2rem;
+    }
+
+    .section {
+        padding: 80px 20px;
+    }
+
+    .responsive-img {
+        width: 100%;
+        height: auto;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    .footer-links li {
+        margin: 5px 0;
+    }
+
+    .footer-links a {
+        font-size: 1rem;
+    }
+
+    .contact-form {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .contact-form input .contact-form textarea {
+        font-size: 1rem;
+    }
+
+    .contact-form button {
+        width: 100%;
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .navbar {
+        padding: 10px 15px;
+    }
+
+    .logo {
+        font-size: 1.2rem;
+    }
+
+    .nav-links {
+        top: 50px;
+        right: 10px;
+        width: 90%;
+        height: auto;
+        display: none;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    .nav-links a {
+        font-size: 1.1rem;
+    }
+
+    .section {
+        padding: 60px 20px;
+    }
+
+    .responsive-img {
+        width: 100%;
+        height: auto;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    .footer-links li {
+        margin: 5px 0;
+    }
+
+    .footer-links a {
+        font-size: 1rem;
+    }
+
+    .contact-form {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .contact-form button {
+        width: 100%;
+    }
+}
+
+@media (max-width: 468px) {
+
+    .navbar {
+        padding: 8px 15px;
+    }
+
+    .logo {
+        font-size: 1rem;
+    }
+
+    .nav-links {
+        top: 50px;
+        right: 10px;
+        width: 90%;
+        height: auto;
+        padding: 15px;
+        display: none;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 8px 0;
+    }
+
+    .nav-links a {
+        font-size: 1rem;
+    }
+
+    .section {
+        padding: 50px 20px;
+        height: auto;
+    }
+
+    .responsive-img {
+        width: 100%;
+        height: auto;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    .footer-links li {
+        margin: 5px 0;
+    }
+
+    .footer-links a {
+        font-size: 1rem;
+    }
+
+    .contact-form {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .contact-form button {
+        width: 100%;
+    }
+}
+
+h1,
+h2 {
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #fff;
+    color: #333;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background: #b4b494;
+    color: #000;
+    transform: scale(1.05);
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.card {
+    background: #fff;
+    color: #333;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 300px;
+    text-align: left;
+}
+
+.card h3 {
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 0.9rem;
+}
+
+.responsive-img {
+    width: 600px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 10px;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer p {
+    margin: 5px 0;
+    font-size: 0.9rem;
+}
+
+.footer-links {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 10px;
+    padding: 0;
+}
+
+.footer-links li {
+    margin: 0 15px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #b4b494;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .footer-links {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    .footer-links li {
+        margin: 10px 0;
+    }
+}
+
+.content-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+}
+
+.internship-block {
+    background-color: #535353;
+    padding-top: 30px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    width: 100%;
+    max-width: 800px;
+    font-size: 1.3rem;
+}
+
+.btn {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: transform 0.3s ease-in-out;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
